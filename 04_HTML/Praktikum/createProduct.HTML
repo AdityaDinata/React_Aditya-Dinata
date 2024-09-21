@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+</head>
+<body>
+    <h1>Create Product</h1>
+    
+    <h2>Detail Product</h2>
+    
+    <form action="#">
+        <div>
+            <label for="productName">Product name:</label><br>
+            <input type="text" id="productName" name="productName" minlength="6" maxlength="50" required><br><br>
+        </div>
+        <div>
+            <label for="productCategory">Product Category:</label><br>
+            <select id="productCategory" name="productCategory" required>
+                <option value="" disabled selected></option>
+                <option value="Category 1">Category 1</option>
+                <option value="Category 2">Category 2</option>
+                <option value="Category 3">Category 3</option>
+            </select><br><br>
+        </div>
+
+        <div>
+            <label>Product Freshness:</label><br>
+            <input type="radio" id="brandNew" name="productFreshness" value="Brand New" required>
+            <label for="brandNew">Brand New</label><br>
+            <input type="radio" id="secondHank" name="productFreshness" value="Second Hank" required>
+            <label for="secondHank">Second Hank</label><br>
+            <input type="radio" id="refurbished" name="productFreshness" value="Refurbished" required>
+            <label for="refurbished">Refurbished</label><br><br>
+        </div>
+        <div>
+            <label for="productImage">Image of Product </label>
+            <input type="file" id="productImage" name="productImage" required><br><br>
+        </div>
+        <div>
+            <label for="description">Additional Description:</label><br>
+            <textarea id="description" name="description" rows="3" required></textarea><br><br>
+        </div>
+        <div>
+            <label for="productPrice">Product price:</label><br>
+            <span>$<input type="number" id="productPrice" name="productPrice" min="1" required></span><br><br>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

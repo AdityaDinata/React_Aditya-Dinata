@@ -1,6 +1,26 @@
-Branching dalam Git: Branching memungkinkan saya untuk membuat cabang terpisah dari branch utama (seperti main atau master) untuk mengerjakan fitur atau perbaikan baru. Ini membantu saya mengisolasi perubahan tanpa mempengaruhi kode utama, sehingga dapat mengelola berbagai versi proyek secara bersamaan.
+## Elemen Inline dan Block
 
-Penggunaan Pull Requests di GitHub: Pull Requests adalah cara untuk mengajukan perubahan dari satu branch ke branch utama di GitHub. Proses ini melibatkan peninjauan dan diskusi perubahan oleh tim sebelum menggabungkannya ke branch utama, memastikan kualitas kode dan integrasi yang lebih baik.
+HTML dibagi menjadi dua jenis elemen:
 
-Proses Review dan Merge: Pull Requests memungkinkan anggota tim untuk memberikan masukan dan melakukan review terhadap perubahan sebelum digabungkan. Setelah review selesai dan perubahan disetujui, perubahan tersebut digabungkan ke branch utama, membantu menjaga kualitas kode dan mencegah masalah integrasi.
+- **Block Elements:** Mengisi seluruh lebar wadahnya. Contoh: `<div>`, `<h1>`, `<p>`, `<section>`.
+  
+- **Inline Elements:** Hanya selebar kontennya. Contoh: `<span>`, `<a>`, `<img>`.
 
+## Atribut HTML
+
+Atribut digunakan untuk memberikan informasi tambahan pada elemen HTML. Contoh atribut yang umum termasuk:
+
+- `id`
+- `class`
+- `src` (untuk gambar)
+- `href` (untuk tautan)
+- `alt` (deskripsi gambar)
+- `style` (untuk penyesuaian gaya)
+
+## Media (Gambar, Video, dan Audio)
+
+HTML memungkinkan penambahan gambar, video, dan audio menggunakan elemen:
+
+- `<img>`: Untuk menampilkan gambar.
+- `<video>`: Untuk menampilkan video.
+- `<audio>`: Untuk menampilkan audio.
