@@ -1,6 +1,12 @@
-Branching dalam Git: Branching memungkinkan saya untuk membuat cabang terpisah dari branch utama (seperti main atau master) untuk mengerjakan fitur atau perbaikan baru. Ini membantu saya mengisolasi perubahan tanpa mempengaruhi kode utama, sehingga dapat mengelola berbagai versi proyek secara bersamaan.
+### Poin-Poin Pembelajaran
 
-Penggunaan Pull Requests di GitHub: Pull Requests adalah cara untuk mengajukan perubahan dari satu branch ke branch utama di GitHub. Proses ini melibatkan peninjauan dan diskusi perubahan oleh tim sebelum menggabungkannya ke branch utama, memastikan kualitas kode dan integrasi yang lebih baik.
+1. **Organisasi Konten**  
+   Menyusun konten dalam section yang terpisah dan terstruktur membantu meningkatkan keterbacaan dan navigasi. Menggunakan heading yang jelas dan divisi untuk kolom informasi memudahkan pengguna dalam menemukan apa yang mereka cari.
 
-Proses Review dan Merge: Pull Requests memungkinkan anggota tim untuk memberikan masukan dan melakukan review terhadap perubahan sebelum digabungkan. Setelah review selesai dan perubahan disetujui, perubahan tersebut digabungkan ke branch utama, membantu menjaga kualitas kode dan mencegah masalah integrasi.
+2. **Responsivitas dalam Desain**  
+   Menggunakan CSS dengan media queries memungkinkan konten untuk menyesuaikan tampilan pada berbagai ukuran layar. Ini penting untuk memastikan bahwa website dapat diakses dan digunakan dengan baik di perangkat desktop, tablet, dan ponsel.
+
+3. **Keterpaduan Antara HTML dan CSS**  
+   Memahami hubungan antara HTML dan CSS adalah kunci untuk menciptakan desain web yang efektif. HTML bertanggung jawab untuk struktur konten, sementara CSS mengontrol tampilan visual, sehingga keduanya perlu bekerja sama untuk mencapai hasil yang diinginkan.
+
 
