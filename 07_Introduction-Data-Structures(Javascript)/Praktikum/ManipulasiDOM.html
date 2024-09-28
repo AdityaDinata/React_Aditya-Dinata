@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutipan Acak</title>
+</head>
+<body>
+    <div id="quote" style="margin: 20px; font-size: 18px; font-weight: bold;"></div>
+
+    <!-- Tombol untuk menghasilkan kutipan -->
+    <button onclick="displayQuote()">Generate Quote</button>
+
+    <script>
+        // Array berisi kutipan-kutipan
+        const quotes = [
+            'Batasan satu-satunya untuk esok adalah keraguan kita hari ini.',
+            'Tujuan hidup kita adalah untuk bahagia.',
+            'Hidup adalah apa yang terjadi saat kita sibuk membuat rencana lain.'
+        ];
+
+        // Fungsi untuk menampilkan kutipan acak
+        function displayQuote() {
+ 
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+
+   
+            const randomQuote = quotes[randomIndex];
+
+
+            document.getElementById('quote').innerText = randomQuote;
+        }
+    </script>
+</body>
+</html>

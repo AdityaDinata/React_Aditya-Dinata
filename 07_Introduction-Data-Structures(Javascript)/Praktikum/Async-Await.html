@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutipan Belajar di Alterra</title>
+</head>
+<body>
+
+    <div id="quote" style="margin: 20px; font-size: 18px; font-weight: bold;"></div>
+
+    <!-- Tombol untuk mengambil kutipan acak -->
+    <button onclick="getQuote()">Get Alterra Quote</button>
+
+    <script>
+        // Fungsi async untuk mendapatkan kutipan acak tentang belajar di Alterra
+        async function getQuote() {
+            // Menampilkan pesan loading sementara menunggu respon dari API
+            document.getElementById('quote').innerText = "Mengambil kutipan, harap tunggu...";
+
+            // Mensimulasikan pengambilan data dari API dengan setTimeout
+            const quotes = await new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve([
+                        'Belajar di Alterra membuat saya lebih memahami konsep coding secara mendalam.',
+                        'Alterra membantu saya meningkatkan kemampuan problem solving dalam dunia pemrograman.',
+                        'Metode pembelajaran di Alterra sangat interaktif dan efektif.',
+                        'Di Alterra, saya mendapatkan banyak pengalaman langsung dalam pengembangan aplikasi.',
+                        'Mentor di Alterra sangat profesional dan selalu siap membantu.'
+                    ]);
+                }, 3000); //Menggunakan Simulasi penundaan selama 3 detik
+            });
+
+            // Menghasilkan indeks acak untuk memilih kutipan
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const randomQuote = quotes[randomIndex];
+
+            // Menampilkan kutipan di dalam div dengan id 'quote'
+            document.getElementById('quote').innerText = randomQuote;
+        }
+    </script>
+</body>
+</html>
