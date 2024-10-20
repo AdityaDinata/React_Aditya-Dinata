@@ -237,7 +237,21 @@ const ContentForm = ({ onSubmit }) => {
           <tbody>
             {submittedProducts.map((product, index) => (
               <tr key={product.id}>
-                <td className="border border-gray-300 px-4 py-2">{index + 1}</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  <Link
+                    to="/view"
+                    state={{
+                      product: {
+                        ...product,
+                        image: formData.productImage ? URL.createObjectURL(formData.productImage) : null,
+                        description: formData.productDescription
+                      }
+                    }}
+                    className="text-blue-600 hover:underline"
+                  >
+                    {index + 1}
+                  </Link>
+                </td>
                 <td className="border border-gray-300 px-4 py-2">{product.name}</td>
                 <td className="border border-gray-300 px-4 py-2">{product.category}</td>
                 <td className="border border-gray-300 px-4 py-2">{product.freshness}</td>
@@ -255,22 +269,6 @@ const ContentForm = ({ onSubmit }) => {
                   >
                     Edit
                   </button>
-                  <button className="bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-700 ml-2">
-                    <Link
-                      to="/view"
-                      state={{
-                        product: {
-                          ...product,
-                          image: formData.productImage ? URL.createObjectURL(formData.productImage) : null,
-                          description: formData.productDescription
-                        }
-                      }}
-                      className="text-white"
-                    >
-                      View
-                    </Link>
-                  </button>
-
                 </td>
               </tr>
             ))}
